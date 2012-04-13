@@ -382,3 +382,9 @@ footer .block {
   line-height: 1;
 }
 
+/*responsive images
+------------------------------- */
+.thumbnail img, .brand img{
+  max-width: 100%;
+}
+

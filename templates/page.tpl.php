@@ -41,6 +41,13 @@
     <?php if ( $site_slogan ): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
     <?php endif; ?>
+    <?php if ($logo): ?>
+      <div class="logo-container">
+        <a class="brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+      </div>
+    <?php endif; ?>
     <?php if ( $subnav_links ): ?>
       <div class="subnav">
         <?php print $subnav_links; ?>
