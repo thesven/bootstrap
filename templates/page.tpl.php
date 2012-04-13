@@ -105,7 +105,7 @@
 
 </div>
 
-<footer class="container">
+<div class="container">
   <?php if ( $page['footer_first'] || $page['footer_second'] ): ?>
     <div class="row">
       <?php if ( $page['footer_first']): ?>
@@ -120,4 +120,14 @@
   <?php if ( $page['footer_third']): ?>
     <?php print render($page['footer_third']); ?>
   <?php endif; ?>
+</div>
+
+<footer class="container">
+  <?php if ( $page['bottom']): ?>
+    <div class="row">
+      <div class="span12">
+        <?php print render($page['bottom']); ?>
+      </div>
+    </div>
+    <?php endif; ?>
 </footer>
